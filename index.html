@@ -1,0 +1,249 @@
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Koversi-Suhu</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script type="text/javascript">
+
+
+        hitungcr = () => {
+            let suhu = document.getElementById('suhu').value;
+            let hasil = 4 / 5 * suhu;
+            document.getElementById('hasil').value = hasil;
+
+        }
+        hitungcf = () => {
+            let suhu1 = document.getElementById('suhu1').value;
+            let hasil1 = 9 / 5 * suhu1 + 32;
+            document.getElementById('hasil1').value = hasil1;
+        }
+        hitungck = () => {
+            let suhu2 = document.getElementById('suhu2').value;
+            let hasil2 = suhu2 * 1 + 273;
+            document.getElementById('hasil2').value = hasil2;
+        }
+        hitungrc = () => {
+            let suhur = document.getElementById('suhur').value;
+            let hasilr = 5 / 4 * suhur;
+            document.getElementById('hasilr').value = hasilr;
+        }
+        hitungrf = () => {
+            let suhurf = document.getElementById('suhurf').value;
+            let hasilrf = 9 / 4 * suhurf + 32;
+            document.getElementById('hasilrf').value = hasilrf;
+        }
+        hitungrk = () => {
+            let suhurk = document.getElementById('suhurk').value;
+            let hasilrk = 5 / 4 * suhurk + 273;
+            document.getElementById('hasilrk').value = hasilrk;
+        }
+        hitungfc = () => {
+            let suhufc = document.getElementById('suhufc').value;
+            let hasilfc = 5 / 9 * (suhufc - 32);
+            document.getElementById('hasilfc').value = hasilfc;
+        }
+        hitungfr = () => {
+            let suhufr = document.getElementById('suhufr').value;
+            let hasilfr = 4 / 9 * (suhufr - 32);
+            document.getElementById('hasilfr').value = hasilfr;
+        }
+        hitungfk = () => {
+            let suhufk = document.getElementById('suhufk').value;
+            let hasilfk = 5 / 9 * (suhufk - 32) + 273;
+            document.getElementById('hasilfk').value = hasilfk;
+        }
+        hitungkc = () => {
+            let suhukc = document.getElementById('suhukc').value;
+            let hasilkc = suhukc - 273;
+            document.getElementById('hasilkc').value = hasilkc;
+        }
+        hitungkr = () => {
+            let suhukr = document.getElementById('suhukr').value;
+            let hasilkr = 4/5 * (suhukr - 273);
+            document.getElementById('hasilkr').value = hasilkr;
+        }
+        hitungkf = () => {
+            let suhukf = document.getElementById('suhukf').value;
+            let hasilkf = 9/5 * (suhukf - 273);
+            document.getElementById('hasilkf').value = hasilkf;
+        }
+    </script>
+
+</head>
+<style>
+    .gradient{ background: linear-gradient(to right, darkred, darkblue);}
+</style>
+<body>
+    <div class="gradient">
+        <img src="logo_putih.png" >
+    </div>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="card col-sm-4">
+                <div class="card-header bg-primary text-white">
+                    <h4>Celcius ke Reamur</h4>
+                </div>
+                <div class="card-body">
+                    Suhu
+                    <input type="text" id="suhu" class="form-control">
+                    <br>
+                    <button type="button" class="btn btn-primary btn-block" onclick="hitungcr()">Hasil</button>
+                    <br>
+                    <input type="text" id="hasil" class="form-control bg-primary text-white">
+                </div>
+            </div>
+            <div class="card col-sm-4">
+                <div class="card-header bg-warning text-white">
+                    <h4>Celcius ke Farenheit</h4>
+                </div>
+                <div class="card-body">
+                    Suhu
+                    <input type="text" id="suhu1" class="form-control">
+                    <br>
+                    <button type="button" class="btn btn-warning btn-block" onclick="hitungcf()">Hasil</button>
+                    <br>
+                    <input type="text" id="hasil1" class="form-control bg-warning text-white">
+                </div>
+            </div>
+            <div class="card col-sm-4">
+                <div class="card-header bg-secondary text-white">
+                    <h4>Celcius ke Kelvin</h4>
+                </div>
+                <div class="card-body">
+                    Suhu
+                    <input type="text" id="suhu2" class="form-control">
+                    <br>
+                    <button type="button" class="btn btn-secondary btn-block" onclick="hitungck()">Hasil</button>
+                    <br>
+                    <input type="text" id="hasil2" class="form-control bg-secondary text-white">
+                </div>
+            </div>
+            <div class="card col-sm-4">
+                <div class="card-header bg-success text-white">
+                    <h4>Reamur ke Celcius</h4>
+                </div>
+                <div class="card-body">
+                    Suhu
+                    <input type="text" id="suhur" class="form-control">
+                    <br>
+                    <button type="button" class="btn btn-success btn-block" onclick="hitungrc()">Hasil</button>
+                    <br>
+                    <input type="text" id="hasilr" class="form-control bg-success text-white">
+                </div>
+            </div>
+            <div class="card col-sm-4">
+                <div class="card-header bg-danger text-white">
+                    <h4>Reamur ke Farenheit</h4>
+                </div>
+                <div class="card-body">
+                    Suhu
+                    <input type="text" id="suhurf" class="form-control">
+                    <br>
+                    <button type="button" class="btn btn-danger btn-block" onclick="hitungrf()">Hasil</button>
+                    <br>
+                    <input type="text" id="hasilrf" class="form-control bg-danger text-white">
+                </div>
+            </div>
+            <div class="card col-sm-4">
+                <div class="card-header bg-info text-white">
+                    <h4>Reamur ke Kelvin</h4>
+                </div>
+                <div class="card-body">
+                    Suhu
+                    <input type="text" id="suhurk" class="form-control">
+                    <br>
+                    <button type="button" class="btn btn-info btn-block" onclick="hitungrk()">Hasil</button>
+                    <br>
+                    <input type="text" id="hasilrk" class="form-control bg-info text-white">
+                </div>
+            </div>
+            <div class="card col-sm-4">
+                <div class="card-header bg-dark text-white">
+                    <h4>Farenheit ke Celcius</h4>
+                </div>
+                <div class="card-body">
+                    Suhu
+                    <input type="text" id="suhufc" class="form-control">
+                    <br>
+                    <button type="button" class="btn btn-dark btn-block" onclick="hitungfc()">Hasil</button>
+                    <br>
+                    <input type="text" id="hasilfc" class="form-control bg-dark text-white">
+                </div>
+            </div>
+            <div class="card col-sm-4">
+                <div class="card-header bg-light text-black">
+                    <h4>Farenheit ke Reamur</h4>
+                </div>
+                <div class="card-body">
+                    Suhu
+                    <input type="text" id="suhufr" class="form-control">
+                    <br>
+                    <button type="button" class="btn btn-light btn-block text-black" onclick="hitungfr()">Hasil</button>
+                    <br>
+                    <input type="text" id="hasilfr" class="form-control bg-light text-black">
+                </div>
+            </div>
+            <div class="card col-sm-4">
+                <div class="card-header bg-success text-white">
+                    <h4>Farenheit ke Kelvin</h4>
+                </div>
+                <div class="card-body">
+                    Suhu
+                    <input type="text" id="suhufk" class="form-control">
+                    <br>
+                    <button type="button" class="btn btn-success btn-block" onclick="hitungfk()">Hasil</button>
+                    <br>
+                    <input type="text" id="hasilfk" class="form-control bg-success text-white">
+                </div>
+            </div>
+            <div class="card col-sm-4">
+                <div class="card-header bg-info text-white">
+                    <h4>Kelvin ke Celcius</h4>
+                </div>
+                <div class="card-body">
+                    Suhu
+                    <input type="text" id="suhukc" class="form-control">
+                    <br>
+                    <button type="button" class="btn btn-info btn-block" onclick="hitungkc()">Hasil</button>
+                    <br>
+                    <input type="text" id="hasilkc" class="form-control bg-info text-white">
+                </div>
+            </div>
+            <div class="card col-sm-4">
+                <div class="card-header bg-danger text-white">
+                    <h4>Kelvin ke Reamur</h4>
+                </div>
+                <div class="card-body">
+                    Suhu
+                    <input type="text" id="suhukr" class="form-control">
+                    <br>
+                    <button type="button" class="btn btn-danger btn-block" onclick="hitungkr()">Hasil</button>
+                    <br>
+                    <input type="text" id="hasilkr" class="form-control bg-danger text-white">
+                </div>
+            </div>
+            <div class="card col-sm-4">
+                <div class="card-header bg-warning text-white">
+                    <h4>Kelvin ke Farenheit</h4>
+                </div>
+                <div class="card-body">
+                    Suhu
+                    <input type="text" id="suhukf" class="form-control">
+                    <br>
+                    <button type="button" class="btn btn-warning btn-block" onclick="hitungkf()">Hasil</button>
+                    <br>
+                    <input type="text" id="hasilkf" class="form-control bg-warning text-white">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
